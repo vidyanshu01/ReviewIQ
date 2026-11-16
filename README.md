@@ -8,6 +8,11 @@ ReviewIQ is a data analytics and NLP project that transforms customer reviews in
 
 The project uses the Women's Clothing E-Commerce Reviews dataset to explore customer feedback and understand product experiences across different departments.
 
+##  Live Demo
+
+**[Open ReviewIQ Dashboard](https://reviewiq-eyb6happbrhw4eoyzzngdtq.streamlit.app/)**
+
+Explore customer sentiment analysis, aspect-level insights, review quality scoring, similar review detection, and an interactive review explorer.
 
 
 ## Key Features
