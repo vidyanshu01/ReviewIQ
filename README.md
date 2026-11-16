@@ -1,4 +1,4 @@
-\# ReviewIQ – AI-Powered Review Intelligence System
+# ReviewIQ – AI-Powered Review Intelligence System
 
 
 
@@ -10,25 +10,25 @@ The project uses the Women's Clothing E-Commerce Reviews dataset to explore cust
 
 
 
-\## Key Features
+## Key Features
 
 
 
-\- \*\*Exploratory Data Analysis:\*\* Analyze ratings, review lengths, recommendations, missing values, and department-level patterns.
+- **Exploratory Data Analysis:** Analyze ratings, review lengths, recommendations, missing values, and department-level patterns.
 
-\- \*\*Sentiment Analysis:\*\* Classify customer reviews into positive, neutral, and negative sentiment using TF-IDF and Logistic Regression.
+- **Sentiment Analysis:** Classify customer reviews into positive, neutral, and negative sentiment using TF-IDF and Logistic Regression.
 
-\- \*\*Aspect-Based Analysis:\*\* Identify customer feedback about fit, design, fabric, comfort, and durability.
+- **Aspect-Based Analysis:** Identify customer feedback about fit, design, fabric, comfort, and durability.
 
-\- \*\*Review Quality Scoring:\*\* Apply a rule-based scoring system to assess review detail, aspect coverage, experience cues, and specificity.
+- **Review Quality Scoring:** Apply a rule-based scoring system to assess review detail, aspect coverage, experience cues, and specificity.
 
-\- \*\*Similar Review Detection:\*\* Identify potentially similar reviews using TF-IDF and cosine similarity.
+- **Similar Review Detection:** Identify potentially similar reviews using TF-IDF and cosine similarity.
 
-\- \*\*Interactive Dashboard:\*\* Explore insights, filter reviews, search customer feedback, and export filtered data.
+- **Interactive Dashboard:** Explore insights, filter reviews, search customer feedback, and export filtered data.
 
 
 
-\## Dashboard
+## Dashboard
 
 
 
@@ -50,7 +50,7 @@ Run the application locally to explore six dashboard sections:
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
@@ -74,21 +74,21 @@ Run the application locally to explore six dashboard sections:
 
 
 
-\## Dataset
+## Dataset
 
 
 
-\*\*Source:\*\* \[Women's Clothing E-Commerce Reviews – Kaggle](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
+**Source:** \[Women's Clothing E-Commerce Reviews – Kaggle](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
 
 
 
-\- Original records: 23,486
+- Original records: 23,486
 
-\- Cleaned records: 22,637
+- Cleaned records: 22,637
 
-\- Original features: 11
+- Original features: 11
 
-\- Engineered features: 24
+- Engineered features: 24
 
 
 
@@ -100,11 +100,11 @@ The dataset is not included in this repository. Download it from Kaggle and plac
 
 
 
-\## Project Results
+## Project Results
 
 
 
-\### Sentiment Analysis
+### Sentiment Analysis
 
 
 
@@ -126,7 +126,7 @@ The sentiment model uses TF-IDF features and Logistic Regression.
 
 
 
-\*\*Class-wise F1-score\*\*
+**Class-wise F1-score**
 
 
 
@@ -146,7 +146,7 @@ The sentiment labels are derived from customer ratings and serve as proxy labels
 
 
 
-\### Review Quality Analysis
+### Review Quality Analysis
 
 
 
@@ -170,7 +170,7 @@ The score considers review detail, aspect coverage, experience-related cues, and
 
 
 
-\### Aspect Intelligence
+### Aspect Intelligence
 
 
 
@@ -198,7 +198,7 @@ A review may mention multiple aspects, so the counts overlap.
 
 
 
-\### Similar Review Detection
+### Similar Review Detection
 
 
 
@@ -210,11 +210,11 @@ Similarities indicate textual resemblance, not confirmed duplicate reviews, plag
 
 
 
-\## Installation and Setup
+## Installation and Setup
 
 
 
-\### 1. Clone the repository
+### 1. Clone the repository
 
 
 
@@ -228,11 +228,11 @@ cd ReviewIQ
 
 
 
-\### 2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 
 
 
-\*\*Windows PowerShell\*\*
+**Windows PowerShell**
 
 
 
@@ -246,7 +246,7 @@ python -m venv .venv
 
 
 
-\### 3. Install dependencies
+### 3. Install dependencies
 
 
 
@@ -260,7 +260,7 @@ pip install -r requirements.txt
 
 
 
-\### 4. Download the dataset
+### 4. Download the dataset
 
 
 
@@ -288,7 +288,7 @@ Womens Clothing E-Commerce Reviews.csv
 
 
 
-\### 5. Generate project outputs
+### 5. Generate project outputs
 
 
 
@@ -314,7 +314,7 @@ python -m src.analysis.duplicate\_detection
 
 
 
-\### 6. Launch the dashboard
+### 6. Launch the dashboard
 
 
 
@@ -334,7 +334,7 @@ Open:
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -404,67 +404,67 @@ ReviewIQ/
 
 
 
-\## Skills Demonstrated
+## Skills Demonstrated
 
 
 
-\- Data cleaning and preprocessing
+- Data cleaning and preprocessing
 
-\- Exploratory data analysis (EDA)
+- Exploratory data analysis (EDA)
 
-\- Feature engineering
+- Feature engineering
 
-\- Natural Language Processing
+- Natural Language Processing
 
-\- Sentiment classification
+- Sentiment classification
 
-\- Aspect-based review analysis
+- Aspect-based review analysis
 
-\- Model evaluation
+- Model evaluation
 
-\- Text similarity analysis
+- Text similarity analysis
 
-\- Interactive data visualization
+- Interactive data visualization
 
-\- Dashboard development
-
-
-
-\## Limitations
+- Dashboard development
 
 
 
-\- Sentiment labels are rating-derived proxy labels.
-
-\- Neutral sentiment is harder for the model to classify accurately.
-
-\- Review quality scores are heuristic, not objective measures of authenticity.
-
-\- Similarity detection identifies candidates and requires human review.
-
-\- Findings reflect the supplied dataset and should not automatically be generalized to all e-commerce customers.
+## Limitations
 
 
 
-\## Future Improvements
+- Sentiment labels are rating-derived proxy labels.
+
+- Neutral sentiment is harder for the model to classify accurately.
+
+- Review quality scores are heuristic, not objective measures of authenticity.
+
+- Similarity detection identifies candidates and requires human review.
+
+- Findings reflect the supplied dataset and should not automatically be generalized to all e-commerce customers.
 
 
 
-\- Add topic modeling for discovering emerging customer concerns.
-
-\- Improve neutral sentiment classification.
-
-\- Add department-level and product-level comparisons.
-
-\- Introduce time-based review trend analysis.
-
-\- Deploy the dashboard for public access.
+## Future Improvements
 
 
 
-\---
+- Add topic modeling for discovering emerging customer concerns.
+
+- Improve neutral sentiment classification.
+
+- Add department-level and product-level comparisons.
+
+- Introduce time-based review trend analysis.
+
+- Deploy the dashboard for public access.
 
 
 
-\*\*ReviewIQ – Turning Customer Reviews into Actionable Insights.\*\*
+---
+
+
+
+**ReviewIQ – Turning Customer Reviews into Actionable Insights.**
 
