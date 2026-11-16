@@ -52,52 +52,32 @@ Run the application locally to explore six dashboard sections:
 
 ## Technology Stack
 
-
-
 | Category | Tools |
-
 |---|---|
-
 | Programming | Python |
-
 | Data Analysis | Pandas, NumPy |
-
 | Machine Learning | Scikit-learn, Logistic Regression |
-
 | NLP | TF-IDF, N-grams, Cosine Similarity |
-
 | Visualization | Plotly, Matplotlib, Seaborn |
-
 | Dashboard | Streamlit |
-
 | Model Storage | Joblib |
 
 
 
 ## Dataset
 
+**Source:** [Women's Clothing E-Commerce Reviews – Kaggle](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
 
-
-**Source:** \[Women's Clothing E-Commerce Reviews – Kaggle](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
-
-
-
-- Original records: 23,486
-
-- Cleaned records: 22,637
-
-- Original features: 11
-
-- Engineered features: 24
-
-
+| Metric | Value |
+|---|---:|
+| Original Records | 23,486 |
+| Cleaned Records | 22,637 |
+| Original Features | 11 |
+| Engineered Features | 24 |
 
 The dataset is not included in this repository. Download it from Kaggle and place the CSV file at:
 
-
-
 `data/raw/Womens Clothing E-Commerce Reviews.csv`
-
 
 
 ## Project Results
@@ -106,96 +86,41 @@ The dataset is not included in this repository. Download it from Kaggle and plac
 
 ### Sentiment Analysis
 
-
-
 The sentiment model uses TF-IDF features and Logistic Regression.
 
-
-
 | Metric | Result |
-
 |---|---:|
-
 | Accuracy | 81.89% |
-
 | Macro F1-score | 66.14% |
+| Training Samples | 18,109 |
+| Testing Samples | 4,528 |
 
-| Training samples | 18,109 |
-
-| Testing samples | 4,528 |
-
-
-
-**Class-wise F1-score**
-
-
+**Class-wise Performance**
 
 | Sentiment | F1-score |
-
 |---|---:|
-
 | Negative | 60.79% |
-
 | Neutral | 45.28% |
-
 | Positive | 92.34% |
-
-
-
-The sentiment labels are derived from customer ratings and serve as proxy labels. They are not independently annotated human sentiment labels. The model's performance should therefore be interpreted in that context.
-
 
 
 ### Review Quality Analysis
 
-
-
-The rule-based review quality scoring produced the following distribution:
-
-
-
-| Quality Level | Reviews |
-
+| Quality Level | Number of Reviews |
 |---|---:|
-
 | Low | 14,131 |
-
 | Medium | 8,461 |
-
 | High | 45 |
-
-
-
-The score considers review detail, aspect coverage, experience-related cues, and specificity. It is a heuristic measure, not a trained classifier or a fake-review detector.
-
-
 
 ### Aspect Intelligence
 
-
-
-The project identifies five major product aspects:
-
-
-
-| Aspect | Mentions |
-
+| Product Aspect | Mentions |
 |---|---:|
-
 | Fit | 14,664 |
-
 | Design | 10,214 |
-
 | Fabric | 8,531 |
-
 | Comfort | 6,616 |
-
 | Durability | 1,091 |
-
-
-
-A review may mention multiple aspects, so the counts overlap.
-
 
 
 ### Similar Review Detection
@@ -382,23 +307,23 @@ ReviewIQ/
 
 └── src/
 
-&#x20;   ├── data/
+         ├── data/
 
-&#x20;   │   └── prepare\_data.py
+         │   └── prepare\_data.py
 
-&#x20;   ├── analysis/
+         ├── analysis/
 
-&#x20;   │   ├── eda.py
+         │   ├── eda.py
 
-&#x20;   │   ├── quality\_scoring.py
+         │   ├── quality\_scoring.py
 
-&#x20;   │   ├── aspect\_analysis.py
+         │   ├── aspect\_analysis.py
 
-&#x20;   │   └── duplicate\_detection.py
+         │   └── duplicate\_detection.py
 
-&#x20;   └── models/
+         └── models/
 
-&#x20;       └── sentiment\_model.py
+             └── sentiment\_model.py
 
 ```
 
